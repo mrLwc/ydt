@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>联系我们</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/inset.css">
+    <link rel="stylesheet" href="style/content.css">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=	mPu3FiTBixEwXDkBYGA2X0te8ClQeDrI"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container-fluid header">
+        <div class="header_bar">
+            <div class="logo">
+                <img src="img/yunditui20160330-ditui1.png" class="logo_1">
+                <img src="img/yunditui20160330-ditui2.png" class="logo_2">
+            </div>
+            <div class="intro pull-right">
+                <a href="index.html">首页</a>
+                <a href="generalize.html">我要推广</a>
+                <a href="case.html">实战案例</a>
+                <a href="joinus.html">加入我们</a>
+                <a class="active" href="#">联系我们</a>
+            </div>
+        </div>
+    </div>
+    <script>
+       $(function () {
+        setTimeout(function () {
+            $(".logo .logo_1").animate({
+                left: '0px'
+            }, 500);
+            $(".logo .logo_1").css("-webkit-transform", "rotateZ(720deg)");
+            $(".logo .logo_1").css("-moz-transform", "rotateZ(720deg)");
+            $(".logo .logo_1").css("-o-transform", "rotateZ(720deg)");
+            $(".logo .logo_1").css("-ms-transform", "rotateZ(720deg)");
+            $(".logo .logo_1").css("transform", "rotateZ(720deg)");
+        }, 500);
+        setTimeout(function () {
+            $(".logo .logo_2").animate({
+                left: '50px'
+            }, 500);
+            $(".logo .logo_2").animate({
+                left: '0px'
+            }, 500);
+        }, 1000)
+    })
+    </script>
+    <!-- banner -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 row_banner">
+                <img class="pic" src="img/yunditui20160330-lianxiwom.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- map -->
+    <div class="map container">
+        <div class="row map_title">
+            <div class="col-md-12">
+                <p class="contactus">联系我们 <span>Contact Us</span> </p>
+            </div>
+        </div>
+        <div class="map_box row">
+            <div class="map_left col-xs-9 col-sm-9 col-md-9">
+                <div id="allmap"></div>
+            </div>
+            <div class="map_right col-xs-3 col-sm-3 col-md-3">
+                <div class="map_addr_dizhi">
+                    <ul>
+                        <li data-value="宁波市海曙区环城西路896号创新园d栋">
+                            <img src="img/yunditui20160330-ningbo.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：523000</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：宁波市海曙区环城西路南段896号创新园d栋309</p>
+                            </div>
+                        </li>
+                        <li data-value="广州市天河区翰景路1号金星大厦">
+                            <img src="img/yunditui20160330-guangzhou.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：510515</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：广州市天河区翰景路1号金星大厦五楼F-23</p>
+                            </div>
+                        </li>
+                        <li data-value="浙江省杭州市下城区文晖路现代置业大厦东楼" id="hzs">
+                            <img src="img/yunditui20160330-hangzhou.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：100100</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：浙江省杭州市下城区文晖路现代置业大厦东楼306</p>
+                            </div>
+                        </li>
+                        <li data-value="辽宁省沈阳市和平区三好街76号裕宁大厦">
+                            <img src="img/yunditui20160330-shenyang.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：210000</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：辽宁省沈阳市和平区三号街76号裕宁大厦33楼</p>
+                            </div>
+                        </li>
+                        <li data-value="武汉市洪山区团结大道爱家国际">
+                            <img src="img/yunditui20160330-wuhan.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：523000</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：武汉市洪山区团结大道爱家国际星星角色商务办公综合体</p>
+                            </div>
+                        </li>
+                        <li data-value="江苏省南京市栖霞区紫东路1号紫东创意园G3-503">
+                            <img src="img/yunditui20160330-nanjing.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：510515</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：江苏省南京市栖霞区紫东路1号紫东创意园G3-503</p>
+                            </div>
+                        </li>
+                        <li data-value="上海市杨浦区政立路477号创智科技中心">
+                            <img src="img/yunditui20160330-shanghai.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：100100</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：上海市杨浦区政立路477号创智科技中心二号楼16F</p>
+                            </div>
+                        </li>
+                        <li data-value="南昌市红谷滩新区丰和新城">
+                            <img src="img/yunditui20160330-nanchang.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：210000</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：南昌市红谷滩新区丰和新城一期3幢一单元1201</p>
+                            </div>
+                        </li>
+                        <li data-value="石家庄市桥东区滨江商务大厦b座1418">
+                            <img src="img/yunditui20160330-shijiazhuang.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：523000</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：石家庄市桥东区滨江商务大厦b座1418</p>
+                            </div>
+                        </li>
+                        <li data-value="成都市温江区南熏大道榕树岭小区3幢2单元1802">
+                            <img src="img/yunditui20160330-chengdu.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：510515</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：成都市温江区南熏大道榕树岭小区3幢2单元1802</p>
+                            </div>
+                        </li>
+                        <li data-value="西安市高新区科技路48号创业广场C座一层">
+                            <img src="img/yunditui20160330-xian.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：100100</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：西安市高新区科技路48号创业广场C座一层创途在xian</p>
+                            </div>
+                        </li>
+                        <li data-value="北京市海淀区西北旺镇大牛坊">
+                            <img src="img/yunditui20160330-beijing.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：210000</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：北京市海淀区西北旺镇大牛坊社区1期14号4楼402</p>
+                            </div>
+                        </li>
+                        <li data-value="福建省福州市闽侯县沙堤村德州">
+                            <img src="img/yunditui20160330-fuzhou.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：523000</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：福建省福州市闽侯县沙堤德州21号</p>
+                            </div>
+                        </li>
+                        <li data-value="深圳市宝安区三区中粮地产集团中心21楼ZL-65">
+                            <img src="img/yunditui20160330-shenzhen.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：510515</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：深圳市宝安区三区中粮地产集团中心21楼ZL-65</p>
+                            </div>
+                        </li>
+                        <li data-value="厦门市集美区杏湾路">
+                            <img src="img/yunditui20160330-xiamen.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：100100</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：厦门市集美区杏湾路464号杏林湾营运中心1号楼301爱特众创空间</p>
+                            </div>
+                        </li>
+                        <li data-value="湖南省长沙市雨花区香樟路北冲尾小区12栋1单元">
+                            <img src="img/yunditui20160330-changsha.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：210000</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：湖南省长沙市雨花区香樟路北冲尾小区12栋1单元</p>
+                            </div>
+                        </li>
+                        <li data-value="重庆市北碚区城南新区天生巷">
+                            <img src="img/yunditui20160330-chongqing.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：523000</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：重庆市北碚区城南新区天生巷24号</p>
+                            </div>
+                        </li>
+                        <li data-value="安徽省合肥市高新区科学大道19号">
+                            <img src="img/yunditui20160330-hefei.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：510515</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：安徽省合肥市高新区科学大道19号</p>
+                            </div>
+                        </li>
+                        <li data-value="吉林省长春市北远达大街">
+                            <img src="img/yunditui20160330-changchun.jpg" />
+                            <div class="dizhi">
+                                <p>邮编：100100</p>
+                                <p>总机：0571-88635796</p>
+                                <p>地址：吉林省长春市北远达大街与明斯克路交汇 中天北湾新城二期</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="footer_top container">
+            <div class="row">
+                <span class="youqing col-md-7 col-sm-7 col-xs-7">
+                    <a href="#" target="_blank">友情链接：青团社</a>&nbsp; | &nbsp;
+                    <a href="#" target="_blank">Codrim全球流量聚合交易</a>
+                </span>
+                <span style="text-align: right;" class="col-md-5">©2016 杭州弧途科技有限公司 版权所有. 浙ICP备14013428号-1</span>
+            </div>
+        </div>
+        <div class="footer_bottom container">
+            <div class="row">
+                <div class="part_one col-md-3 col-sm-3 col-xs-3">
+                    <p class="p1">
+                        <a href="#" target="_blank">我们的服务</a>
+                    </p>
+                    <ul>
+                        <li>兼职输出</li>
+                        <li>策划执行</li>
+                        <li>市场BD</li>
+                        <li>O2O推广</li>
+                    </ul>
+                </div>
+                <div class="part_one col-md-3 col-sm-3 col-xs-3">
+                    <p class="p1">
+                        <a href="#" target="_blank">加入我们</a>
+                    </p>
+                    <ul>
+                        <li>地推侠</li>
+                        <li>城市经理</li>
+                        <li>区域代理</li>
+                    </ul>
+                </div>
+                <div class="part_one col-md-3 col-sm-3 col-xs-3">
+                    <p class="p1">
+                        <a href="#" target="_blank">联系我们</a>
+                    </p>
+                    <ul>
+                        <li>电话：0571-88635796</li>
+                        <li>邮箱：business@yunditui.cn</li>
+                        <li style="width: 322px;">地址：杭州市余杭区良睦路1399号梦想小镇22号仓</li>
+                        <img style="padding-top: 10px;width:93px;" src="img/yunditui20160330-logotop.png">
+                    </ul>
+                </div>
+                <div class="part_one col-md-3 col-sm-3 col-xs-3" style="text-align: center;">
+                    <img src="img/yunditui20160330-erweima.jpg">
+                    <p style="font-size: 16px; color: rgb(102,102,102); padding-top: 5px;">关注我们</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");       
+        map.centerAndZoom(new BMap.Point(116.4035,39.915),8); 
+        setTimeout(function(){
+            map.panTo(new BMap.Point(113.262232,23.154345));   //两秒后移动到广州
+        }, 2000);
+    </script>
+</body>
+
+</html>
